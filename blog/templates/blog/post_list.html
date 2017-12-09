@@ -7,16 +7,13 @@
             <h1><a href="/">this is a blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 09.12.2017, 13:52</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Lorem ipsum dolor amet kitsch brunch vape neutra deep v. Occupy chartreuse organic semiotics, cray quinoa post-ironic. Shaman yuccie scenester slow-carb polaroid. 90's vice iPhone yuccie pok pok poutine readymade slow-carb bicycle rights cardigan art party franzen. Disrupt pitchfork gochujang, flexitarian shoreditch kinfolk selfies beard scenester banh mi. Sustainable kale chips truffaut synth before they sold out snackwave.</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
 
-        <div>
-            <p>published: 09.12.2017, 13:52</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Scenester farm-to-table glossier, affogato blog slow-carb deep v disrupt thundercats lomo blue bottle. Lo-fi helvetica polaroid hammock narwhal kombucha wayfarers kitsch lyft raclette trust fund asymmetrical mixtape flannel post-ironic. Tbh salvia chartreuse vegan vexillologist portland humblebrag. Irony four loko adaptogen put a bird on it, vinyl whatever banjo kale chips pabst tote bag pitchfork. Copper mug adaptogen street art, pabst farm-to-table chia tbh banh mi portland flexitarian fingerstache vice +1 la croix. Tilde tumeric hashtag, normcore heirloom DIY poutine readymade before they sold out. Palo santo green juice deep v af keytar artisan, disrupt swag franzen vexillologist.</p>
-        </div>
     </body>
 </html>
