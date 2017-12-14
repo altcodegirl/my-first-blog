@@ -1,2 +1,2 @@
 # my-first-blog
-Django Girls London
+Django Girls London 09/12/17
