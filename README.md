@@ -1,2 +1,3 @@
-# my-first-blog
-Django Girls London 09/12/17
+# Django Girls London
+my-first-blog - the guided tutorial into python and django
+https://tutorial.djangogirls.org/en/
